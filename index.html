@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="packages/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Test</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <section id="choose" class="choose">
+            <div class="choose__wrap d-xl-flex d-none">
+                <h2>Выберите способ заработка</h2>
+                <div class="choose__buttons">
+                    <div class="choose__button" onclick="toogle('trade__tab')">
+                        <div class="choose__buttonIcon">
+                            <img src="img/icon-1.png" alt="trade" title="trade">
+                            <h3>Торговать</h3>
+                        </div>
+                    </div>
+                    <div class="choose__button" onclick="toogle('invest__tab')">
+                        <div class="choose__buttonIcon">
+                            <img src="img/icon-2.png" alt="trade" title="trade">
+                            <h3>Инвестировать</h3>
+                        </div>
+                    </div>
+                    <div class="choose__button" onclick="toogle('attract__tab')">
+                        <div class="choose__buttonIcon">
+                            <img src="img/icon-3.png" alt="trade" title="trade">
+                            <h3>Привлекать инвесторов</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="choose__wrapMobile" class="choose__wrapMobile d-flex d-xl-none">
+                <h2>Выберите способ заработка</h2>
+                <div class="choose__buttonsMobile">
+                    <div id="trade__mobileButton" class="choose__buttonMobile" onclick="toogleMenu('trade__textMobile', 'arrow1')">
+                        <div class="choose__buttonIconMobile">
+                            <img src="img/icon-1.png" alt="trade" title="trade">
+                        </div>
+                        <h3>Самостоятельно торговать</h3>
+                        <div id="arrow1" class="arrow">
+                            <img src="img/arrow.png" alt="arrow" title="arrow">
+                        </div>
+                    </div>
+                    <div id="trade__textMobile" class="trade__textMobile">
+                        <p>
+                            Если вы ищете пассивный доход и предпочитаете, чтобы деньги для
+                            вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ.
+                            ЛАММ - это сервис копирования сделок успешных трейдеров.
+                            Доходность ничем не ограничена
+                        </p>
+                        <h2>Как это работает</h2>
+                        <ol>
+                            <li><span>Вы выбираете управляющего из рейтинга по фильтру Options</span></li>
+                            <li><span>Подключаете свой счет к счету Управляющего</span></li>
+                            <li><span>На вашем счете начинается копирование сделок</span></li>
+                            <li><span>
+                                Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши
+                                средства остаются на Вашем счете.
+                            </span></li>
+                            <li><span>Вы можете подключиться к нескольким Управляющим одновременно.</span></li>
+                            <li><span>Вы можете отключиться от Управляющих в любой момент.</span></li>
+                        </ol>
+                        <button>Открыть счёт</button>
+                    </div>
+                    <div class="choose__buttonMobile">
+                        <div class="choose__buttonIconMobile">
+                            <img src="img/icon-2.png" alt="trade" title="trade">
+                        </div>
+                        <h3>Инвестировать</h3>
+                        <div class="arrow">
+                            <img src="img/arrow.png" alt="arrow" title="arrow">
+                        </div>
+                    </div>
+                    <div class="choose__buttonMobile">
+                        <div class="choose__buttonIconMobile">
+                            <img src="img/icon-3.png" alt="trade" title="trade">
+                        </div>
+                        <h3>Привлекать инвесторов</h3>
+                        <div class="arrow">
+                            <img src="img/arrow.png" alt="arrow" title="arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="type" class="type">
+            <div class="type__wrap">
+                <div class="type__tabs">
+                    <div id="trade__tab" class="type__tab">
+                        <h3>Торговать</h3>
+                    </div>
+                    <div id="invest__tab" class="type__tab">
+                        <h3>Инвестировать</h3>
+                    </div>
+                    <div id="attract__tab" class="type__tab">
+                        <h3>Привлекать инвесторов</h3>
+                    </div>
+                </div>
+                <div class="type__text">
+                    <div class="trade__text">
+                        <p>
+                            Если вы ищете пассивный доход и предпочитаете, чтобы деньги для
+                            вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ.
+                            ЛАММ - это сервис копирования сделок успешных трейдеров.
+                            Доходность ничем не ограничена
+                        </p>
+                        <h2>Как это работает</h2>
+                        <ol>
+                            <li><span>Вы выбираете управляющего из рейтинга по фильтру Options</span></li>
+                            <li><span>Подключаете свой счет к счету Управляющего</span></li>
+                            <li><span>На вашем счете начинается копирование сделок</span></li>
+                            <li><span>
+                                Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши
+                                средства остаются на Вашем счете.
+                            </span></li>
+                            <li><span>Вы можете подключиться к нескольким Управляющим одновременно.</span></li>
+                            <li><span>Вы можете отключиться от Управляющих в любой момент.</span></li>
+                        </ol>
+                        <button>Продолжить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
